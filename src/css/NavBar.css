@@ -1,0 +1,23 @@
+.navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 25px;
+}
+.nav-item {
+    font-size: larger;
+    padding: 4px;
+    margin: 3px;
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+}
+.nav-item:hover{
+    font-weight: bold;
+}
+.navlist {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
