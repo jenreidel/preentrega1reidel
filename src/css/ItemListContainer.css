@@ -1,5 +1,5 @@
-.itemlist {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.greeting {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Alumni Sans', sans-serif;
 }
