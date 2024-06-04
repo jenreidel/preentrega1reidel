@@ -1,6 +1,6 @@
 import '../css/ItemListContainer.css';
 import banner from '../assets/img/banner-jardininterior1.png';
-import { listaProductos } from '../../productos';
+import data from '../../productos.json'
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemList from './ItemList';
@@ -14,7 +14,7 @@ const ItemListContainer = ( {greeting} ) => {
   const getProductos = () => {
     return new Promise ((resolve) => {
       setTimeout (()=>{
-        resolve(listaProductos);
+        resolve(data);
       }, 1000);
     });
   };

@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import '../css/NavBar.css'
 import logo from '../assets/img/logojardininterior.jpg';
 import { Link } from 'react-router-dom';
-import { listaCategorias } from '../../categorias';
+import listaCategorias from '../../categorias.json'
 import { NavLink } from 'react-bootstrap';
 import { CartWidget } from './CartWidget';
 

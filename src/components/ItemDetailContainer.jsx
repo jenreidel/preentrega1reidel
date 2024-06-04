@@ -1,5 +1,5 @@
 import ItemDetail from './ItemDetail';
-import { listaProductos } from '../../productos';
+import data from '../../productos.json'
 import { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 
@@ -13,8 +13,8 @@ function ItemDetailContainer () {
         return await new Promise ((resolve) => {
             setTimeout(()=>{
                 idProducto ?
-                resolve(listaProductos.find((prod) => prod.id === parseInt(idProducto)))
-                : resolve(listaProductos)
+                resolve(data.find((prod) => prod.id === parseInt(idProducto)))
+                : resolve(data)
             }, 2000)
             })
         };
