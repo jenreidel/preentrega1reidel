@@ -15,7 +15,7 @@ function ItemDetailContainer () {
                 idProducto ?
                 resolve(data.find((prod) => prod.id === parseInt(idProducto)))
                 : resolve(data)
-            }, 2000)
+            }, 1000)
             })
         };
 

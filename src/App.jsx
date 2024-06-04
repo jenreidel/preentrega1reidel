@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<ItemListContainer greeting={<div>PLANTAS DE INTERIOR PARA VESTIR TODOS TUS AMBIENTES</div>}/>} />
         <Route path="/categorias/:idCategorias" element={<ItemListContainer greeting={<div>PLANTAS DE INTERIOR PARA VESTIR TODOS TUS AMBIENTES</div>}/>} />
-        <Route path="/item/:itemId" element={<ItemDetailContainer />} />
+        <Route path="/producto/:idProducto" element={<ItemDetailContainer />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
       <Footer />
