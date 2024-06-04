@@ -3,3 +3,12 @@
     margin-top: 30px;
     font-family: 'Alumni Sans', sans-serif;
 }
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img{
+    width: 18rem;
+}

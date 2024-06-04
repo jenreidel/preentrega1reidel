@@ -1,0 +1,33 @@
+footer{
+    color: #414438;
+}
+.footer-centro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+}
+.arriba-red{
+    border-radius: 10%;
+    position: relative;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.no-bullet{
+    list-style: none;
+}
+.socalo-peque{
+    font-size: medium;
+}
+.derechos {
+    text-align: center;
+    font-size: small;
+}
+.titulo-footer {
+    font-family: 'Alumni Sans', sans-serif;
+    font-size:xx-large;
+}
+.txtnormal {
+    font-family: 'Ysabeau Infant', sans-serif;
+}

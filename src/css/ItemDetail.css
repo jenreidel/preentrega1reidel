@@ -1,0 +1,20 @@
+.txt-normal {
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+.container-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    margin: 30px 20px;
+    border-style: solid;
+    padding: 10px;
+    width: 50%;
+    border-width: thin;
+}
+.precio-descripcion{
+    width: 600px;
+    margin-left: 50px;
+}

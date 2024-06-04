@@ -21,3 +21,6 @@
     display: flex;
     flex-direction: row;
 }
+.bg-color {
+    background-color: none;
+}

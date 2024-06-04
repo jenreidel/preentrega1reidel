@@ -1,0 +1,222 @@
+export const listaProductos = [
+    {
+        id: 1,
+        nombre: "Aloe Vera",
+        precio: 2500,
+        descripcion: "Uno de sus principales beneficios es su capacidad para limpiar el aire de toxinas. Absorben las sustancias nocivas que pueda haber en el ambiente, como por ejemplo el benceno.",
+        categoria: {
+            id: "planta",
+            nombre: "Planta"
+        },
+        imagen: "../src/assets/img/aloevera.jpg"
+    },
+    {
+        id: 2,
+        nombre: "Calathea",
+        precio: 3900,
+        descripcion: "Contribuyen a armonizar espacios, relaciones y a estabilizar las emociones. Son plantas resistentes que transmiten energía Yang, perfecta para ubicarla en el living hacia el este (zona de la salud y la familia).",
+        categoria: {
+            id: "planta",
+            nombre: "Planta"
+        },
+        imagen: "../src/assets/img/calathea.jpeg"
+    },
+    {
+        id: 3,
+        nombre: "Dieffenbachia",
+        precio: 5300,
+        descripcion: "Reduce la cantidad de polvo en el aire y lo purifica. Aumenta la humedad del ambiente. De acuerdo con el Feng Shui, es ideal para lograr los objetivos laborales.",
+        categoria: {
+            id: "planta",
+            nombre: "Planta"
+        },
+        imagen: "../src/assets/img/dieffenbachia.jpg"
+    },
+    {
+        id: 4,
+        nombre: "Espatifilo",
+        precio: 2800,
+        descripcion: "También llamada Lirio de la Paz o Cuna de Moisés, es una planta de hojas verdes y flores blancas muy llamativas. Resistente y con pocos cuidados prospera en el interior sin problemas.",
+        categoria: {
+            id: "planta",
+            nombre: "Planta"
+        },
+        imagen: "../src/assets/img/espatifilo.jpg"
+    },
+    {
+        id: 5,
+        nombre: "Ficus Lyrata",
+        precio: 9200,
+        descripcion: "También conocido como Ficus Pandurata, crece poco a poco hasta convertirse en ese árbol de interior con el que siempre soñaste. Sus cuidados son prácticamente son nulos, por lo que son muy resistentes.",
+        categoria: {
+            id: "planta",
+            nombre: "Planta"
+        },
+        imagen: "../src/assets/img/ficus-lyrata.jpg"
+    },
+    {
+        id: 6,
+        nombre: "Kalanchoe",
+        precio: 1200,
+        descripcion: "Es una planta muy resistente y difícil de matar. Sus flores pueden ser naranjas, rosas, rojas o amarillas. Regala sólo cuando la tierra esté seca y asegurate que reciba mucha luz natural.",
+        categoria: {
+            id: "planta",
+            nombre: "Planta"
+        },
+        imagen: "../src/assets/img/kalanchoe.jpg"
+    },
+    {
+        id: 7,
+        nombre: "Maranta Leuconera",
+        precio: 5900,
+        descripcion: "Al contrario que otros árboles, no necesita muchísima luz, así que es una opción perfecta para casas donde el sol no sea muy generoso. Según el Feng Shui, esta planta es ideal para atraer el dinero.",
+        categoria: {
+            id: "planta",
+            nombre: "Planta"
+        },
+        imagen: "../src/assets/img/maranta-leuconera.jpg"
+    },
+    {
+        id: 8,
+        nombre: "Potus",
+        precio: 5000,
+        descripcion: "Purifica el aire, eliminando ciertas sustancias tóxicas de sus proximidades. Según el Feng Shui, transforma la energía negativa que se acumula en el ambiente.",
+        categoria: {
+            id: "planta",
+            nombre: "Planta"
+        },
+        imagen: "../src/assets/img/potus.JPG"
+    },
+    {
+        id: 9,
+        nombre: "Sanseviera",
+        precio: 4900,
+        descripcion: "Se suele utilizar para purificar el aire. También es una planta recomendada por el Feng Shui para atraer buenas energías a la casa.",
+        categoria: {
+            id: "planta",
+            nombre: "Planta"
+        },
+        imagen: "../src/assets/img/sanseviera.JPG"
+    },
+    {
+        id: 10,
+        nombre: "Trebol Morado",
+        precio: 2100,
+        descripcion: "Responde a la luz y a la oscuridad abriendo y cerrando sus hojas, por lo que muchas personas la consideran mágica o incluso mística. Sólo necesita una macena que drene bien y cerca de alguna ventana.",
+        categoria: {
+            id: "planta",
+            nombre: "Planta"
+        },
+        imagen: "../src/assets/img/trebolmorado.jpg"
+    },
+    {
+        id: 11,
+        nombre: "Copa Nº27",
+        precio: 8500,
+        descripcion: "Maceta Rotomoldeada. Resiste las condiciones climáticas más adversas, mantiene el color a través de los años, poseen protección UV. No se quiebran ni se parten al estar expuestas al sol. Son ultra livianas. Viene en Beige, Blanco, Gris, Negro y Rojo",
+        categoria: {
+            id: "maceta",
+            nombre: "Maceta"
+        },
+        imagen: "../src/assets/img/maceta-copa.jpg"
+    },
+    {
+        id: 12,
+        nombre: "Inca rustica",
+        precio: 12500,
+        descripcion: "Maceta Rotomoldeada. Resiste las condiciones climáticas más adversas, mantiene el color a través de los años, poseen protección UV. No se quiebran ni se parten al estar expuestas al sol. Son ultra livianas. Viene en Gris y Negro. Medidas: Altura 40 cm x Boca 25 cm x Base 18 cm",
+        categoria: {
+            id: "maceta",
+            nombre: "Maceta"
+        },
+        imagen: "../src/assets/img/maceta-inca.jpg"
+    },
+    {
+        id: 13,
+        nombre: "Cono liso brillante",
+        precio: 13000,
+        descripcion: "Maceta Rotomoldeada. Resiste las condiciones climáticas más adversas, mantiene el color a través de los años, poseen protección UV. No se quiebran ni se parten al estar expuestas al sol. Son ultra livianas. Viene en Negro, Blanco y Gris. Medidas: Altura 55 cm x Boca 35 cm x Base 25 cm",
+        categoria: {
+            id: "maceta",
+            nombre: "Maceta"
+        },
+        imagen: "../src/assets/img/maceta-cono-roto.jpg"
+    },
+    {
+        id: 14,
+        nombre: "Haru con patas",
+        precio: 7500,
+        descripcion: "Hecha de cerámica, con patas. Viene en un delicado color Rosado. Medidas: 12 x 12 x 12 cm",
+        categoria: {
+            id: "maceta",
+            nombre: "Maceta"
+        },
+        imagen: "../src/assets/img/maceta-haru.jpg"
+    },
+    {
+        id: 15,
+        nombre: "Maceta Tartagal",
+        precio: 5000,
+        descripcion: "Al estar hecha de fibrocemento, aconsejamos impermeabilizar la maceta para evitar futuras manchas de humedad. Medidas: 45 cm x 35 cm x 20 cm. (Alto x Boca x Base)",
+        categoria: {
+            id: "maceta",
+            nombre: "Maceta"
+        },
+        imagen: "../src/assets/img/maceta-tartagal.jpg"
+    },
+    {
+        id: 16,
+        nombre: "Regadera alta",
+        precio: 2500,
+        descripcion: "Regadera metálica para sumar a tus rincones botánicos como elemento decorativo de diseño. Viene en Cobre, Blanco y Negro. Capacidad: 750ml. Medidas: 15 x 6 cm (Alto x Base).",
+        categoria: {
+            id: "accesorio",
+            nombre: "Accesorio"
+        },
+        imagen: "../src/assets/img/regadera-metal-alta.jpg"
+    },
+    {
+        id: 17,
+        nombre: "Regadera baja",
+        precio: 2000,
+        descripcion: "Regadera metálica para sumar a tus rincones botánicos como elemento decorativo de diseño. Viene en Rosado, Cobre, Blanco y Negro. Capacidad: 1,3Lt. Medidas: 38 x 20 x 13 cm.",
+        categoria: {
+            id: "accesorio",
+            nombre: "Accesorio"
+        },
+        imagen: "../src/assets/img/regadera-metal-corta.jpg"
+    },
+    {
+        id: 18,
+        nombre: "Portamaceta madera",
+        precio: 5000,
+        descripcion: "Portamaceta cuadrado de madera. Desde $5.000.- Medidas disponibles 30 x 30 cm, 50 x 30 cm, 60 x 30 cm.",
+        categoria: {
+            id: "accesorio",
+            nombre: "Accesorio"
+        },
+        imagen: "../src/assets/img/portamaceta-cuadrado.jpg"
+    },
+    {
+        id: 19,
+        nombre: "Portamaceta alto",
+        precio: 5500,
+        descripcion: "Portamacetas alto de hierro Negro, ideal para macetas nº22. Desde $5.500.- Medidas disponibles: 60cm, 80 cm.",
+        categoria: {
+            id: "accesorio",
+            nombre: "Accesorio"
+        },
+        imagen: "../src/assets/img/portamaceta-alto.jpg"
+    },
+    {
+        id: 20,
+        nombre: "Piedras",
+        precio: 500,
+        descripcion: "Una de las tantas ventajas de usarlas es que dan soluciones a problemas como humedad. También permiten separar las hojas verdes del sustrato.",
+        categoria: {
+            id: "accesorio",
+            nombre: "Accesorio"
+        },
+        imagen: "../src/assets/img/piedras.jpg"
+    }
+]

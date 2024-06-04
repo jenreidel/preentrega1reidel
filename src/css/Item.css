@@ -1,0 +1,26 @@
+.card {
+    width: 18rem;
+    margin: 20px;
+    background-color: rgba(146, 137, 124, 0.2);
+}
+.card:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+.card-body{
+    text-align: center;
+}
+.txt-normal {
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+.link {
+    font-size: larger;
+    padding: 4px;
+    margin: 3px;
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+.link:hover{
+    text-decoration: underline;
+}
