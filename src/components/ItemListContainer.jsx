@@ -1,6 +1,6 @@
 import '../css/ItemListContainer.css';
 import banner from '../assets/img/banner-jardininterior1.png';
-import data from '../../productos.json'
+import data from '../data/productos.json'
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemList from './ItemList';
