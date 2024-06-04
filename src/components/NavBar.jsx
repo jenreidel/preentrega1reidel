@@ -5,7 +5,7 @@ import '../css/NavBar.css'
 import logo from '../assets/img/logojardininterior.jpg';
 import { Link } from 'react-router-dom';
 import listaCategorias from '../data/categorias.json'
-import { NavLink } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import { CartWidget } from './CartWidget';
 
 function Header() {
@@ -14,13 +14,13 @@ function Header() {
       <Navbar id="ir-arriba" className="bg-color" data-bs-theme="light">
         <Container className="navbar">
           <Navbar.Brand>
-            <NavLink to="/">
+            <Link to="/">
               <img
                 src={logo}
                 alt="logo de tu jardin interior"
                 style={{ width: "150px", height: "auto" }}
               />
-            </NavLink>
+            </Link>
           </Navbar.Brand>
           <Nav>
             <NavLink className="nav-item" to={"/"}>Inicio</NavLink>
