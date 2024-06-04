@@ -49,7 +49,7 @@ const ItemListContainer = ( {greeting} ) => {
             <div style={{margin: 20, display: "flex", justifyContent: 'center', alignItems: 'center'}}> 
             Cargando... 
             </div>
-          ) : (<ItemList key={productos.id} items={productos}/>)
+          ) : (<ItemList items={productos}/>)
         }
       </div>
     </div>

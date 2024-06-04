@@ -1,9 +1,5 @@
 [
     {
-        "id": "inicio",
-        "nombre": "Inicio"
-    },
-    {
         "id": "planta",
         "nombre": "Plantas de Interior"
     },

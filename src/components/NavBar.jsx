@@ -8,7 +8,7 @@ import listaCategorias from '../data/categorias.json'
 import { NavLink } from 'react-bootstrap';
 import { CartWidget } from './CartWidget';
 
-function Navegador() {
+function Header() {
   return (
     <div>
       <Navbar id="ir-arriba" className="bg-color" data-bs-theme="light">
@@ -22,13 +22,8 @@ function Navegador() {
               />
             </NavLink>
           </Navbar.Brand>
-          {/* <Nav>
-            <Link className="nav-item" to={"/"}>Inicio</Link>
-            <Link className="nav-item" to={"/categorias/Planta"}>Plantas de Interior</Link>
-            <Link className="nav-item" to={"/categorias/Maceta"}>Macetas</Link>
-            <Link className="nav-item" to={"/categorias/Accesorio"}>Accesorios</Link>
-          </Nav> */}
-          <div>
+          <Nav>
+            <NavLink className="nav-item" to={"/"}>Inicio</NavLink>
             {
               listaCategorias.map((categorias) => (
                 <NavLink key={categorias.id} to={`/categorias/${categorias.id}`} className="nav-item">
@@ -36,7 +31,7 @@ function Navegador() {
                 </NavLink>
               ))
             }
-          </div>
+          </Nav>
           <CartWidget />
         </Container>
       </Navbar>
@@ -44,4 +39,4 @@ function Navegador() {
   );
 }
 
-export default Navegador;
+export default Header;
