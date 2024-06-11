@@ -24,3 +24,13 @@
 .link:hover{
     text-decoration: underline;
 }
+.button {
+    margin: 10px;
+    display: flex;
+    justify-content: center; 
+}
+.button1 {
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: medium;
+    padding: 2px;
+}
