@@ -11,7 +11,7 @@ const Carrito = () => {
       {
         carrito.length > 0 ?
         <>
-          <h2>Total: {calcularTotal()}</h2>
+          <h2>Total: ${calcularTotal()}</h2>
           <button onClick={vaciarCarrito}>Vaciar Carrito</button>
         </> :
         <h2>Carrito Vacío :/</h2>
