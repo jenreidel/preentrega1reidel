@@ -1,7 +1,8 @@
 import ItemDetail from './ItemDetail';
-import data from '../data/productos.json'
 import { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../firebase/config";
 
 function ItemDetailContainer () {
 
@@ -9,23 +10,16 @@ function ItemDetailContainer () {
     const [product, setProduct] = useState({});
     const {idProducto} = useParams();
 
-    const buscarProducto = async () => {
-        return await new Promise ((resolve) => {
-            setTimeout(()=>{
-                idProducto ?
-                resolve(data.find((prod) => prod.id === parseInt(idProducto)))
-                : resolve(data)
-            }, 1000)
-            })
-        };
-
     useEffect(() => {
+
+        const docRef = doc(db, "productos", idProducto);
+
         setCargando(true);
-        buscarProducto()
-        .then((res) => {
-            setProduct(res)
-            setCargando(false)
-        })
+        getDoc(docRef)
+            .then(res => {
+                setProduct({...res.data(), id: res.id});
+                setCargando(false)
+            })
         
     }, [idProducto]);
         

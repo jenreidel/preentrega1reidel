@@ -1,9 +1,10 @@
 import '../css/ItemListContainer.css';
 import banner from '../assets/img/banner-jardininterior1.png';
-import data from '../data/productos.json'
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemList from './ItemList';
+import { collection , getDocs, query, where } from "firebase/firestore";
+import { db } from "../firebase/config";
 
 const ItemListContainer = ( {greeting} ) => {
 
@@ -11,27 +12,21 @@ const ItemListContainer = ( {greeting} ) => {
   const [productos, setProductos] = useState([]);
   const {idCategorias} = useParams();
 
-  const getProductos = () => {
-    return new Promise ((resolve) => {
-      setTimeout (()=>{
-        resolve(data);
-      }, 1000);
-    });
-  };
-
   useEffect (() => {
 
+    const productosRef = collection(db, "productos");
+    const q = idCategorias ? query(productosRef, where("categoria.id", "==", idCategorias)) : productosRef;
+
     setCargando(true);
-    getProductos()
+    getDocs(q)
     .then((res) => {
-      if (!idCategorias) {
-          setProductos(res);
-          setCargando(false);
-      } else {
-          setProductos(res.filter((prod) => prod.categoria.id === idCategorias));
-          setCargando(false);
-      }
-  })
+      setProductos(
+        res.docs.map((doc) => {
+        return {...doc.data(), id: doc.id}
+        })
+      );
+      setCargando(false);
+    })
   
   }, [idCategorias]);
 
