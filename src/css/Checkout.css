@@ -1,0 +1,41 @@
+.detalle-compra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    margin: 50px;
+    font-family: 'Ysabeau Infant', sans-serif;
+    border: solid 0.1cap;
+    width: 40%;
+    padding: 50px;
+}
+.finalizar-compra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    margin: 50px;
+    font-family: 'Ysabeau Infant', sans-serif;
+    border: solid 0.1cap;
+    width: 30%;
+    padding: 50px;
+}
+.comprar{
+    font-family: 'Ysabeau Infant', sans-serif;
+    padding: 5px;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    margin: 10px;
+    font-family: 'Ysabeau Infant', sans-serif;
+    width: 50%;
+}

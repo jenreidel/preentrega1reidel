@@ -2,6 +2,7 @@
     width: 18rem;
     margin: 20px;
     background-color: rgba(146, 137, 124, 0.2);
+    border-radius: 3%;
 }
 .card:hover {
     background-color: rgba(0, 0, 0, 0.2);

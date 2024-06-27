@@ -7,11 +7,17 @@
     align-items: center;
     margin: 30px 20px;
     padding: 10px;
+    border: solid 0.1cap black;
+    width: 50%;
 }
 .precio-descripcion{
     width: 35%;
     margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .img-detail {
     width: 30rem;
+    border-radius: 3%;
 }

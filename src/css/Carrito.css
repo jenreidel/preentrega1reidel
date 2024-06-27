@@ -1,0 +1,50 @@
+.img-carrito {
+    width: 8rem;
+}
+.prod-carrito {
+    border: solid 0.1cap black;
+    font-family: 'Ysabeau Infant', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+.total {
+    font-family: 'Ysabeau Infant', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.button-vaciar {
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: medium;
+    padding: 3px;
+    margin: 5px;
+}
+.buttonMasMenos {
+    width: 2rem;
+    padding: 2px;
+}
+.vacio {
+    font-family: 'Ysabeau Infant', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 250px;
+}
+.button-comprar {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: x-large;
+    padding: 7px;
+}
+.container-prod {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
