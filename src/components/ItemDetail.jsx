@@ -10,6 +10,7 @@ const ItemDetail = ({item}) => {
 
   return (
     <div key={item.id}>
+      <hr />
       <div style={{margin: 20, display: "flex", justifyContent: 'center', alignItems: 'center'}}>
         <h2 className='txt-normal'><strong>{item.nombre}</strong></h2>
       </div>

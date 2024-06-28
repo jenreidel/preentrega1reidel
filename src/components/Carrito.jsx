@@ -6,27 +6,31 @@ import { Link } from 'react-router-dom';
 
 const Carrito = () => {
 
-  const { carrito, calcularTotal, vaciarCarrito, eliminarProducto } = useContext(CartContext);
+  const { carrito, calcularTotal, vaciarCarrito, eliminarProducto, aumentarCantidad, disminuirCantidad } = useContext(CartContext);
 
   return (
     <div>
+      <hr />
+      <br />
       {
         carrito.length > 0 ?
         <div>
-          <div className='container-prod'>
-          {carrito.map((prod) => 
-            <div className='prod-carrito'>
-              <div>
-                <img className="img-carrito" src={prod.imagen} alt={prod.nombre}/>
+          <div className='container'>
+            <div className='container-prod'>
+            {carrito.map((prod) => 
+              <div className='prod-carrito'>
+                <div>
+                  <img className="img-carrito" src={prod.imagen} alt={prod.nombre}/>
+                </div>
+                <h3>{prod.nombre}: ${prod.precio}</h3> 
+                <button className='buttonMasMenos' onClick={() => {disminuirCantidad(prod.id)}}>-</button> 
+                <div>{prod.cantidad}</div> 
+                <button className='buttonMasMenos' onClick={() => {aumentarCantidad(prod.id)}}>+</button>
+                <button className='buttonMasMenos' onClick={() => {eliminarProducto(prod)}}><span role="img" aria-label="Tacho de basura">🗑️</span></button>
               </div>
-              <h3>{prod.nombre}: ${prod.precio}</h3> 
-              <button className='buttonMasMenos' onClick={() => {eliminarProducto(prod)}}>-</button> 
-               
-              <button className='buttonMasMenos' >+</button>
+            )}
             </div>
-          )}
           </div>
-          
           <div className='total'>
             <h2>Total: ${calcularTotal()}</h2>
             <Button className='button-vaciar' onClick={vaciarCarrito}>Vaciar Carrito</Button>
